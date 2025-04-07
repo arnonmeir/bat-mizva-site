@@ -1,0 +1,95 @@
+/* Reset בסיסי */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* רקע כללי */
+body {
+  font-family: 'Assistant', sans-serif;
+  background-color: #fef9ff;
+  color: #333;
+  line-height: 1.6;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 20px;
+  direction: rtl;
+}
+
+/* כותרות */
+h1, h2, h3 {
+  text-align: center;
+  color: #6a1b9a;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* פסקאות וטקסט רגיל */
+p, li, a, div {
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+/* תמונות */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* קונטיינר כללי */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* תיבות תוכן */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* כפתורים */
+button, .btn {
+  background-color: #ba68c8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px auto;
+  transition: background-color 0.3s ease;
+}
+button:hover, .btn:hover {
+  background-color: #ab47bc;
+}
+
+/* רספונסיביות */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
