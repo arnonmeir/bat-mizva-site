@@ -96,6 +96,14 @@ body {
 @media (max-width: 768px) {
 
   .left {
+    min-height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  .left {
     min-height: 200px;
   }
 
