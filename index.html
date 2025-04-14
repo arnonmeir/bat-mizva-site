@@ -4,31 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ברוכים הבאים</title>
-  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Varela Round', sans-serif;
-      background: radial-gradient(circle at top, #2d004d, #1a0033);
+      font-family: 'Assistant', sans-serif;
+      background-color: #1a0033;
       margin: 0;
       padding: 0;
-      color: #fff8f0;
+      color: #fff;
       text-align: center;
+    }
+    .hero {
+      background: url('חלק.jpg') no-repeat center center;
+      background-size: contain;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      min-height: 100vh;
-      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+      align-items: center;
+      padding: 2em;
+      box-sizing: border-box;
     }
-    h1 {
-      font-size: 2.2em;
-      margin-top: 1em;
-      color: #ffc0f0;
-      text-shadow: 0 0 10px #ffccff;
-    }
-    p {
-      margin: 1em auto;
+    .hero h1 {
+      font-size: 2.5em;
+      margin: 0.5em 0 0;
+      color: #fff8f0;
+      text-shadow: 0 0 10px #000, 0 0 5px #ffccff;
       max-width: 90%;
-      font-size: 1.1em;
+    }
+    .hero p {
+      font-size: 1.3em;
+      font-weight: 700;
+      color: #ffe6ff;
+      text-shadow: 0 0 8px #000;
+      margin-top: 0.5em;
+      max-width: 85%;
+    }
+    .buttons {
+      margin-top: -2em;
+      padding-bottom: 3em;
     }
     .btn {
       display: block;
@@ -36,36 +50,31 @@
       padding: 1em 2em;
       width: 80%;
       max-width: 300px;
-      font-size: 1.1em;
+      font-size: 1.2em;
       color: #1a0033;
       background-color: #ffd700;
-      border: none;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
       box-shadow: 0 0 15px #ffccff;
-      transition: transform 0.2s ease, background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
     .btn:hover {
       background-color: #ffea70;
       transform: scale(1.05);
     }
-    small {
-      margin-top: auto;
-      font-size: 0.8em;
-      color: #ffccff;
-      padding: 1em;
-    }
   </style>
 </head>
 <body>
-  <h1>ברוכים הבאים!</h1>
-  <p>לכבוד בת המצווה של קרני, יצרנו אתר קטן עם רגעים מצחיקים, תמונות קסומות והפתעות נוצצות ✨</p>
+  <div class="hero">
+    <h1>ברוכים הבאים!</h1>
+    <p>לכבוד בת המצווה של קרני – רגעים, זיכרונות והפתעות נוצצות ✨</p>
+  </div>
 
-  <a href="shulchan1.html" class="btn">🌟 התחילו כאן</a>
-  <a href="photos.html" class="btn">📸 תמונות ילדות</a>
-  <a href="videos.html" class="btn">😂 סרטונים מצחיקים</a>
-
-  <small>...(הצ'ט כבר מזמן חלק מהמשפחה...(נבנה באהבה על ידי המשפחה</small>
+  <div class="buttons">
+    <a href="shulchan1.html" class="btn">🌟 התחילו כאן</a>
+    <a href="photos.html" class="btn">📸 תמונות ילדות</a>
+    <a href="videos.html" class="btn">😂 סרטונים מצחיקים</a>
+  </div>
 </body>
 </html>
