@@ -3,23 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ברוכים הבאים</title>
+  <title>ברוכים הבאים!</title>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Heebo', sans-serif;
+      background-color: #fff0f4;
+      color: #5b3b4c;
+      text-align: center;
+      padding: 1rem;
+    }
+    h1 {
+      font-size: 2.4rem;
+      color: #8e4162;
+      font-weight: 900;
+      margin-top: 1.5rem;
+    }
+    p {
+      font-size: 1.4rem;
+      margin: 1rem auto 2rem;
+      max-width: 90%;
+    }
+    .main-photo {
+      width: 90%;
+      max-width: 400px;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2), 0 0 12px rgba(209, 162, 168, 0.4);
+      border: 3px solid rgba(209, 162, 168, 0.6);
+    }
+    .nav-buttons {
+      margin-top: 2.5rem;
+    }
+    .home-button {
+      display: block;
+      margin: 1rem auto;
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #fdfdfc, #fdf7f3);
+      color: #5c3c00;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(209, 162, 168, 0.3);
+      transition: all 0.3s ease;
+      max-width: 300px;
+    }
+    .home-button:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
 
-  <div class="container">
-    <div class="left" style="background-image: url('חלק.jpg'); min-height: 100vh;"></div>
-    <div class="separator"></div>
-    <div class="right">
-      <h1>ברוכים הבאים!</h1>
-      <p><strong>לכבוד בת המצווה של קרני</strong> – אוסף של רגעים, זיכרונות והפתעות נוצצות ✨</p>
+  <h1>ברוכים הבאים!</h1>
+  <p>לכבוד בת המצווה של קרני – רגעים, תמונות והפתעות נוצצות ✨</p>
 
-      <a href="shulchan1.html" class="home-button">🌟 התחילו כאן</a>
-      <a href="photos.html" class="home-button">📸 תמונות ילדות</a>
-      <a href="videos.html" class="home-button">😂 סרטונים מצחיקים</a>
-    </div>
+  <img src="_REBMKM-(721).JPG" alt="קרני מחייכת" class="main-photo">
+
+  <div class="nav-buttons">
+    <a href="shulchan1.html" class="home-button">🌟 התחילו כאן</a>
+    <a href="photos.html" class="home-button">📸 תמונות ילדות</a>
+    <a href="videos.html" class="home-button">😂 סרטונים מצחיקים</a>
   </div>
 
 </body>
