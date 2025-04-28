@@ -15,34 +15,66 @@
     }
     h1 {
       color: #8e4162;
-      font-size: 2rem;
-      margin-bottom: 2rem;
+      font-size: 2.2rem;
+      margin-bottom: 2.5rem;
     }
     .grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 1.5rem;
+      gap: 2rem;
     }
     .card {
       background-color: #ffffff;
-      border-radius: 1rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      width: 250px;
-      padding: 1rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      width: 280px;
+      padding: 1.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     .card img {
       width: 100%;
       border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 {
+      font-size: 1.3rem;
+      color: #8e4162;
+      margin-bottom: 0.8rem;
     }
     .card p {
-      margin-top: 1rem;
-      font-size: 1rem;
+      font-size: 1.1rem;
       color: #5b3b4c;
+      margin: 0;
     }
     @media (max-width: 600px) {
+      .grid {
+        gap: 1.2rem;
+      }
       .card {
-        width: 100%;
+        width: 90%;
+        padding: 1rem;
+      }
+      .card h2 {
+        font-size: 1.2rem;
+      }
+      .card p {
+        font-size: 1rem;
       }
     }
   </style>
@@ -52,27 +84,38 @@
   <div class="grid">
     <div class="card">
       <img src="knowkarni1.jpg" alt="קרני 1">
-      <p>אמא מספרת שאת רוב שעות הלידה בילתה איתי בהסתובבויות בבית החולים...כשאני בבטן...כשהגענו סופסוף לחדר לידה...נשאר לי רק לגלוש החוצה תוך כמה דקות...</p>
+      <h2>סיפורי לידה</h2>
+      <p>אמא מספרת שאת רוב שעות הלידה ביליתה איתי בהסתובבויות בבית החולים...</p>
     </div>
+
     <div class="card">
       <img src="knowkarni2.jpg" alt="קרני 2">
-      <p>אבא מספר שמשחקים ונאומים במקלחת היו הדברים האהובים עלי...לא מאמינים? חפשו בעמוד הסרטונים...</p>
+      <h2>משחקים במקלחת</h2>
+      <p>אבא מספר על המשחקים והנאומים שאהבתי...</p>
     </div>
+
     <div class="card">
       <img src="knowkarni3.JPG" alt="קרני 3">
-      <p> היו לי כמה שנים של אחות קטנה ומתפנקת...עם שני אחים גדולים, דואגים וחמודים</p>
+      <h2>אחות קטנה</h2>
+      <p>היו לי כמה שנים של אחות קטנה ומתפנקת...</p>
     </div>
+
     <div class="card">
       <img src="knowkarni4.jpg" alt="קרני 4">
-      <p></p>אחר כך הגיע תורי להיות אחות גדולה...והפכתי להיות הממרח בסנדוויץ המתוק.</p>
+      <h2>אחות גדולה</h2>
+      <p>אחר כך הגיע תורי להיות אחות גדולה...</p>
     </div>
+
     <div class="card">
       <img src="knowkarni5.jpg" alt="קרני 5">
-      <p>לא שאני הכי ספורטיבית...אבל יש לי תפקיד מפתח בנטבול קטמון...אוהבת לקלוע לסל.</p>
+      <h2>נטבול</h2>
+      <p>לא שאני הכי ספורטיבית, אבל יש לי תפקיד מפתח בנטבול קטמון...</p>
     </div>
+
     <div class="card">
       <img src="knowkarni6.jpg" alt="קרני 6">
-      <p>אבל הכי אני אוהבת לטייל...וחברות...ולקרוא....</p>
+      <h2>אהבות וטיולים</h2>
+      <p>אבל הכי אני אוהבת לטייל, לקרוא ולהיות עם חברות...</p>
     </div>
   </div>
 </body>
