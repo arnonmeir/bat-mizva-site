@@ -143,4 +143,17 @@ body {
     background: linear-gradient(to right, #d1a2a8, #fdf7f3);
     box-shadow: 0 0 10px 4px rgba(209, 162, 168, 0.4), 0 0 20px 8px rgba(255, 239, 160, 0.2);
   }
+
+.rsvp-highlight {
+  background: linear-gradient(to right, #ffd6e8, #ffc0d9);
+  color: #6e004f;
+  border: 2px solid #ff7fbf;
+  box-shadow: 0 0 12px rgba(255, 153, 204, 0.5);
+  font-weight: 900;
+}
+
+.rsvp-highlight:hover {
+  background: linear-gradient(to right, #ffc0d9, #ff99cc);
+  transform: scale(1.07);
+  box-shadow: 0 0 20px rgba(255, 128, 170, 0.6);
 }
