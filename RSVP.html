@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Heebo', sans-serif;
       background-color: #fff0f5;
       display: flex;
       justify-content: center;
@@ -50,6 +50,15 @@
       font-size: 16px;
     }
 
+    .radio-group {
+      margin-bottom: 16px;
+    }
+
+    .radio-group label {
+      font-weight: normal;
+      margin-left: 12px;
+    }
+
     button {
       background-color: #ff66b2;
       color: white;
@@ -74,13 +83,21 @@
       <label for="name">שם מלא:</label>
       <input type="text" id="name" name="name" required>
 
+      <label>האם תוכלו להגיע?</label>
+      <div class="radio-group">
+        <input type="radio" id="coming" name="attendance" value="מגיעים" required>
+        <label for="coming">מגיעים בשמחה 🎉</label><br>
+        <input type="radio" id="not-coming" name="attendance" value="לא נוכל להגיע">
+        <label for="not-coming">לצערנו לא נוכל להגיע 😢</label>
+      </div>
+
       <label for="guests">מספר משתתפים:</label>
-      <input type="number" id="guests" name="guests" required>
+      <input type="number" id="guests" name="guests">
 
       <label for="notes">הערות נוספות:</label>
       <textarea id="notes" name="notes" rows="4"></textarea>
 
-      <button type="submit">שלח אישור הגעה</button>
+      <button type="submit">שלח</button>
     </form>
   </div>
 </body>
