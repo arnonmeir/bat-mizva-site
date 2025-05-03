@@ -3,8 +3,23 @@
 body {
   margin: 0;
   font-family: "Heebo", sans-serif;
-  background-color: #f8f0f4;
   direction: rtl;
+
+  background-image: url("חלק.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* שכבת ריכוך על הרקע (לא חובה, אבל מומלץ) */
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: -1;
 }
 
 /* מבנה עמוד כללי */
@@ -73,7 +88,7 @@ body {
   border: 2px solid rgba(209, 162, 168, 0.6);
 }
 
-/* כפתור */
+/* כפתור רגיל */
 .home-button {
   background: linear-gradient(to right, #fdfdfc, #fdf7f3);
   color: #5c3c00;
@@ -90,6 +105,29 @@ body {
 
 .home-button:hover {
   transform: scale(1.05);
+}
+
+/* כפתור מודגש (אישור הגעה) */
+.rsvp-highlight {
+  background: linear-gradient(to right, #fffafc, #fceef6);
+  color: #7a2d4f;
+  border: 2px solid #eec9d2;
+  font-weight: 900;
+  box-shadow:
+    0 0 10px rgba(255, 215, 235, 0.4),
+    0 0 20px rgba(255, 230, 240, 0.3),
+    inset 0 0 6px rgba(255, 240, 250, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.rsvp-highlight:hover {
+  background: linear-gradient(to right, #fceef6, #ffe6f0);
+  transform: scale(1.07);
+  box-shadow:
+    0 0 14px rgba(255, 190, 210, 0.5),
+    0 0 26px rgba(255, 210, 240, 0.4),
+    inset 0 0 8px rgba(255, 230, 245, 0.6);
 }
 
 /* התאמה לנייד */
@@ -117,14 +155,12 @@ body {
     font-size: 2rem;
   }
 
-
   .left {
     min-height: 250px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
-
 
   .left {
     min-height: 200px;
@@ -133,35 +169,16 @@ body {
   .container {
     flex-direction: column;
   }
+
   .left, .right, .separator {
     width: 100%;
     flex: none;
   }
+
   .separator {
     height: 5px;
     width: 100%;
     background: linear-gradient(to right, #d1a2a8, #fdf7f3);
     box-shadow: 0 0 10px 4px rgba(209, 162, 168, 0.4), 0 0 20px 8px rgba(255, 239, 160, 0.2);
   }
-
-.rsvp-highlight {
-  background: linear-gradient(to right, #fffafc, #fceef6);
-  color: #7a2d4f;
-  border: 2px solid #eec9d2;
-  font-weight: 900;
-  box-shadow:
-    0 0 10px rgba(255, 215, 235, 0.4),
-    0 0 20px rgba(255, 230, 240, 0.3),
-    inset 0 0 6px rgba(255, 240, 250, 0.5);
-  position: relative;
-  overflow: hidden;
-}
-
-.rsvp-highlight:hover {
-  background: linear-gradient(to right, #fceef6, #ffe6f0);
-  transform: scale(1.07);
-  box-shadow:
-    0 0 14px rgba(255, 190, 210, 0.5),
-    0 0 26px rgba(255, 210, 240, 0.4),
-    inset 0 0 8px rgba(255, 230, 245, 0.6);
 }
