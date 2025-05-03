@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>שחקנית מלידה</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Heebo', sans-serif;
+      background-color: #fff0f4;
+      direction: rtl;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    h1 {
+      color: #8e4162;
+      font-size: 2.2rem;
+      margin-bottom: 2.5rem;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 1.5rem;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      width: 280px;
+      padding: 1.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .card img {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 {
+      font-size: 1.3rem;
+      color: #8e4162;
+      margin-bottom: 0.8rem;
+    }
+    .card p {
+      font-size: 1.4rem;
+      color: #5b3b4c;
+      margin: 0;
+    }
+    @media (max-width: 600px) {
+      .grid {
+        gap: 1.2rem;
+      }
+      .card {
+        width: 90%;
+        padding: 1rem;
+      }
+      .card h2 {
+        font-size: 1.4rem;
+      }
+      .card p {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+ <button class="home-button" onclick="window.location.href='index.html'">לעמוד הבית</button>
+<body>
+  <h1>הכירו את קרני שלנו</h1>
+  <div class="grid">
+    <div class="card">
+      <img src="karnivideo1" alt="קרני 1">
+      <h2>אוהבת לשיר ולנאום במקלחת</h2>
+      <p>כל רחצה היא בעצם במה...</p>
+    </div>
+
+    <div class="card">
+      <img src="knowkarni2.jpg" alt="קרני 2">
+      <h2>מגרש המשחקים שלי</h2>
+      <p>אבא מספר שהייתה תקופה שמה שבעיקר אהבתי זה משחקים ונאומים במקלחת...לא מאמינים? לכו לעמוד הסרטונים.....</p>
+    </div>
+
+    <div class="card">
+      <img src="knowkarni3.JPG" alt="קרני 3">
+      <h2>אחות קטנה</h2>
+      <p>.אז היו כמה שנים שהייתי הכי קטנה וזו שמפנקים אותה..האחים שלי טוענים שאז היה לנו כיף יחד...אחר כך התחלנו גם לריב :).</p>
+    </div>
+
+    <div class="card">
+      <img src="knowkarni4.jpg" alt="קרני 4">
+      <h2>אחות גדולה</h2>
+      <p>אחר כך הגיע תורי להיות אחות גדולה, ומאז יש לי עוד תואר: ילדת סנדוויץ'. או כמו שאני מעדיפה: הממרח בסנדוויץ המתוק...</p>
+    </div>
+
+    <div class="card">
+      <img src="knowkarni5.jpg" alt="קרני 5">
+      <h2>נטבול קטמון אליפות!!!</h2>
+      <p>.לא שאני הכי ספורטיבית, אבל יש לי תפקיד מפתח בנטבול קטמון. סלים זה אני...</p>
+    </div>
+
+    <div class="card">
+      <img src="knowkarni6.jpg" alt="קרני 6">
+      <h2>אין כמו לטייל</h2>
+      <p>אבל הכי אני אוהבת לטייל, לקרוא ולהיות עם חברות...</p>
+    </div>
+  </div>
+</body>
+</html>
