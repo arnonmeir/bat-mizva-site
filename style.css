@@ -11,10 +11,10 @@ body {
   background-attachment: fixed;
   text-align: center;
   padding: 1rem;
-  color: #4d1c3c; /* צבע טקסט כהה ונעים */
+  color: #4d1c3c;
 }
 
-/* שכבת ריכוך מעל הרקע */
+/* שכבת ריכוך שקופה ועדינה */
 .overlay {
   position: fixed;
   top: 0;
