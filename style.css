@@ -4,110 +4,81 @@ body {
   margin: 0;
   font-family: "Heebo", sans-serif;
   direction: rtl;
-
   background-image: url("חלק.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  text-align: center;
+  padding: 1rem;
+  color: #4d1c3c; /* צבע טקסט כהה ונעים */
 }
 
-/* שכבת ריכוך על הרקע (לא חובה, אבל מומלץ) */
+/* שכבת ריכוך מעל הרקע */
 .overlay {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.6);
   z-index: -1;
 }
 
-/* מבנה עמוד כללי */
-.container {
-  display: flex;
-  flex-direction: row;
-  min-height: 100vh;
-}
-
-.left {
-  flex: 2;
-  background-image: url("table8.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.separator {
-  width: 5px;
-  background: linear-gradient(to bottom, #d1a2a8, #fdf7f3);
-  box-shadow: 0 0 12px 6px rgba(255, 215, 180, 0.5), 0 0 24px 12px rgba(255, 235, 200, 0.3);
-}
-
-.right {
-  flex: 1;
-  background: linear-gradient(to bottom, #fff0f4, #f4c3d9);
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-}
-
 /* כותרת ראשית */
-.right h1 {
-  font-size: 2.8rem;
+h1 {
+  font-size: 2.4rem;
   color: #4d1c3c;
   font-weight: 900;
-  margin-bottom: 1.2rem;
+  margin-top: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.right h1::before {
-  content: "✨ ";
-}
-
-/* טקסט רגיל */
-.right p {
-  font-size: 1.7rem;
-  color: #5b3b4c;
-  font-weight: 400;
-  line-height: 1.8;
-}
-
-/* הדגשות */
-.right p strong {
-  font-weight: 700;
-  color: #7a2d4f;
+/* תיאור */
+p {
+  font-size: 1.4rem;
+  margin: 1rem auto 2rem;
+  max-width: 90%;
+  color: #5a2747;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 /* תמונה */
-.bat-image {
-  width: 85%;
-  max-width: 260px;
+.main-photo {
+  width: 90%;
+  max-width: 400px;
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.2), 0 0 12px rgba(209, 162, 168, 0.4);
-  margin: 0 auto;
-  border: 2px solid rgba(209, 162, 168, 0.6);
+  border: 3px solid rgba(209, 162, 168, 0.6);
 }
 
-/* כפתור רגיל */
+/* כפתורים */
+.nav-buttons {
+  margin-top: 2.5rem;
+}
+
 .home-button {
+  display: block;
+  margin: 1.2rem auto;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
   background: linear-gradient(to right, #fdfdfc, #fdf7f3);
   color: #5c3c00;
   border: none;
   border-radius: 20px;
-  padding: 12px 24px;
-  font-size: 1.1rem;
-  font-weight: bold;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(209, 162, 168, 0.3);
   transition: all 0.3s ease;
-  margin-top: 2rem;
+  max-width: 300px;
+  text-decoration: none;
 }
 
 .home-button:hover {
   transform: scale(1.05);
 }
 
-/* כפתור מודגש (אישור הגעה) */
+/* כפתור מודגש – אשרו הגעה */
 .rsvp-highlight {
   background: linear-gradient(to right, #fffafc, #fceef6);
   color: #7a2d4f;
@@ -130,55 +101,22 @@ body {
     inset 0 0 8px rgba(255, 230, 245, 0.6);
 }
 
-/* התאמה לנייד */
+/* מובייל */
 @media (max-width: 768px) {
-
-  .left {
-    min-height: 400px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+  h1 {
+    font-size: 1.9rem;
+    margin-top: 1rem;
   }
 
-  .right {
-    padding-inline: 1rem;
-    max-width: 90%;
-    margin: 0 auto;
+  p {
+    font-size: 1.2rem;
   }
 
-  .right p {
-    font-size: 1.3rem;
+  .main-photo {
+    margin-bottom: 1.5rem;
   }
 
-  .right h1 {
-    font-size: 2rem;
-  }
-
-  .left {
-    min-height: 250px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .left {
-    min-height: 200px;
-  }
-
-  .container {
-    flex-direction: column;
-  }
-
-  .left, .right, .separator {
-    width: 100%;
-    flex: none;
-  }
-
-  .separator {
-    height: 5px;
-    width: 100%;
-    background: linear-gradient(to right, #d1a2a8, #fdf7f3);
-    box-shadow: 0 0 10px 4px rgba(209, 162, 168, 0.4), 0 0 20px 8px rgba(255, 239, 160, 0.2);
+  .home-button {
+    font-size: 1rem;
   }
 }
