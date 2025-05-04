@@ -47,6 +47,7 @@
         transform: translateY(0);
       }
     }
+    .card video,
     .card img {
       width: 100%;
       border-radius: 1rem;
@@ -61,6 +62,20 @@
       font-size: 1.4rem;
       color: #5b3b4c;
       margin: 0;
+    }
+    .home-button {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      padding: 10px 16px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 12px;
+      background-color: #f7c8d3;
+      color: #5b3b4c;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
     @media (max-width: 600px) {
       .grid {
@@ -79,45 +94,50 @@
     }
   </style>
 </head>
- <button class="home-button" onclick="window.location.href='index.html'">לעמוד הבית</button>
 <body>
+
+  <button class="home-button" onclick="window.location.href='index.html'">לעמוד הבית</button>
+
   <h1>הכירו את קרני שלנו</h1>
+
   <div class="grid">
+
     <div class="card">
-      <vid src="karnivideo1.mp4" alt="קרני 1">
+      <video src="karnivideo1.mp4" controls></video>
       <h2>אוהבת לשיר ולנאום במקלחת</h2>
       <p>כל רחצה היא בעצם במה...</p>
     </div>
 
     <div class="card">
-      <img src="knowkarni2.jpg" alt="קרני 2">
+      <video src="karnivideo2.mp4" controls></video>
       <h2>מגרש המשחקים שלי</h2>
-      <p>אבא מספר שהייתה תקופה שמה שבעיקר אהבתי זה משחקים ונאומים במקלחת...לא מאמינים? לכו לעמוד הסרטונים.....</p>
+      <p>משחקים, נאומים ואקשן...</p>
     </div>
 
     <div class="card">
-      <img src="knowkarni3.JPG" alt="קרני 3">
-      <h2>אחות קטנה</h2>
-      <p>.אז היו כמה שנים שהייתי הכי קטנה וזו שמפנקים אותה..האחים שלי טוענים שאז היה לנו כיף יחד...אחר כך התחלנו גם לריב :).</p>
+      <video src="karnivideo3.mp4" controls></video>
+      <h2>אחות קטנה בפעולה</h2>
+      <p>פינוקים, צחוקים, ואז גם קצת ריבים :)</p>
     </div>
 
     <div class="card">
-      <img src="knowkarni4.jpg" alt="קרני 4">
-      <h2>אחות גדולה</h2>
-      <p>אחר כך הגיע תורי להיות אחות גדולה, ומאז יש לי עוד תואר: ילדת סנדוויץ'. או כמו שאני מעדיפה: הממרח בסנדוויץ המתוק...</p>
+      <video src="karnivideo4.mp4" controls></video>
+      <h2>הופכת לאחות גדולה</h2>
+      <p>ולומדת להיות הממרח בסנדוויץ' הכי מתוק שיש</p>
     </div>
 
     <div class="card">
       <img src="knowkarni5.jpg" alt="קרני 5">
       <h2>נטבול קטמון אליפות!!!</h2>
-      <p>.לא שאני הכי ספורטיבית, אבל יש לי תפקיד מפתח בנטבול קטמון. סלים זה אני...</p>
+      <p>לא הכי ספורטיבית, אבל סלים זה אני...</p>
     </div>
 
     <div class="card">
       <img src="knowkarni6.jpg" alt="קרני 6">
       <h2>אין כמו לטייל</h2>
-      <p>אבל הכי אני אוהבת לטייל, לקרוא ולהיות עם חברות...</p>
+      <p>לטייל, לקרוא ולהיות עם חברות...</p>
     </div>
+
   </div>
 </body>
 </html>
