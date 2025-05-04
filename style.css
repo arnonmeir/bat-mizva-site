@@ -90,6 +90,14 @@ p {
     inset 0 0 8px rgba(255, 230, 245, 0.6);
 }
 
+/* וידאו מסובב 90 מעלות שמאלה */
+.rotate-left {
+  transform: rotate(-90deg);
+  transform-origin: center center;
+  max-height: 300px;
+  object-fit: contain;
+}
+
 /* מובייל */
 @media (max-width: 768px) {
   h1 {
